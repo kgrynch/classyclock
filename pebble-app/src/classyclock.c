@@ -46,7 +46,7 @@ static void handle_window_load(Window *window) {
 	text_layer_set_font(tl_current_date, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_SIGNIKA_21)));
 	layer_add_child(window_layer, text_layer_get_layer(tl_current_date));
 
-	tl_next_event_time = text_layer_create_default((GRect) { .origin = { 0, 89 }, .size = { bounds.size.w, 18 } });
+	tl_next_event_time = text_layer_create_default((GRect) { .origin = { 0, 89 }, .size = { bounds.size.w, 70} });
 	layer_add_child(window_layer, text_layer_get_layer(tl_next_event_time));
 
 	tl_next_event_subject = text_layer_create_default((GRect) { .origin = { 0, 108 }, .size = { bounds.size.w, bounds.size.h - 105 } });
